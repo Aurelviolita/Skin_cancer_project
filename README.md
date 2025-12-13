@@ -65,7 +65,7 @@ Model dibangun menggunakan arsitektur **CNN berbasis transfer learning** dengan 
   * Categorical Crossentropy
   * *Focal Loss* (untuk data tidak seimbang)
 * **Metrics**: Accuracy
-* **Epochs**: Disesuaikan (default pada notebook)
+* **Epochs**: 30
 * **Batch Size**: 32
 * **Early Stopping**: Digunakan
 
@@ -123,15 +123,6 @@ predictions = model.predict(test_generator)
 predicted_class = np.argmax(predictions, axis=1)
 ```
 
-## **Struktur File**
-
-```
-├── CNN_skincancer_FIX.ipynb
-├── kaggle.json
-├── models_out/
-│   └── best_model.h5
-└── README.md
-```
 
 ## **Kesimpulan**
 
